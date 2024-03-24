@@ -29,6 +29,15 @@ export class Figure {
   }
 
   canMove(target: Cell): boolean {
+    // console.log(FigureNames.KING)
+    console.log(target.figure?.name)
+    if (target.figure?.color === this.color)
+      return false;
+    if (target.figure?.name === FigureNames.KING) {
+      console.log(FigureNames.KING)
+      console.log(target.figure?.name)
+      return false;
+    }
     return true;
   }
 
