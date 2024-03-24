@@ -8,8 +8,8 @@ export class Cell {
   readonly color: Colors;
   figure: Figure | null;
   board: Board;
-  available: boolean; // может ли переместиться
-  id: number; //для реакт ключей
+  available: boolean;
+  id: number;
 
   constructor(board: Board, x: number, y: number, color: Colors, figure: Figure | null) {
     this.board = board;
