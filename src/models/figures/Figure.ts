@@ -29,8 +29,6 @@ export class Figure {
   }
 
   canMove(target: Cell): boolean {
-    // console.log(FigureNames.KING)
-    console.log(target.figure?.name)
     if (target.figure?.color === this.color)
       return false;
     if (target.figure?.name === FigureNames.KING) {
@@ -41,7 +39,7 @@ export class Figure {
     return true;
   }
 
-  moveFigure(target: Cell): boolean {
-    return true
+  moveFigure(target: Cell) {
+    // return true
   }
 }
